@@ -1,0 +1,64 @@
+body
+{
+  text-align: center;
+  background-image: url("fondo_m.jpg");
+  font-family: fantasy;
+}
+div{
+  border-radius: 15px;
+  background: yellow;
+  padding-center: 2em
+  ;
+}
+
+.start {
+
+   font-style: normal;
+   background-color: #40E0D0 ;
+   padding: 2em;
+    width: 600px ;
+    height: 600px auto;
+    margin: 150px auto;
+    text-align: center;
+}
+.welcome{
+  font-style: normal;
+  background-color: #40E0D0 ;
+  padding: 2em;
+   width: 600px ;
+   height: 600px auto;
+   margin: 150px auto;
+   text-align: center;
+}
+.questions{
+  font-style: normal;
+  background-color: #40E0D0 ;
+  padding: 2em;
+   width: 600px ;
+   height: 600px auto;
+   margin: 150px auto;
+   text-align: center;
+   display: none;
+}
+
+body h1 {
+  font-size: 40px;
+  color:#663399
+
+}
+.start input{
+  width: 300px;
+  height:30px;
+}
+
+button {
+  border-radius: 8px;
+  background-color: #F6FF33;
+  padding: 20px 15px;
+}
+
+.btnBack{
+  border-radius: 6px;
+  padding: 8px 12px;
+  background-color: #A5A4A5;
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<title>TRIVIA PARA NIÑOS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <!--screenStart-->
+	<div id="start" class="start">
+		<h1>MOUNSTRIVIA</h1>
+    <h2>¡Diviertete Mounstriviando!<br/><br>
+      </h2>
+      <div>
+     <form>
+			 <img src="https://steemitimages.com/0x0/https://steemitimages.com/DQmVVhXqn39QfaN5vv621GMgedCPAJ7qvQA4qqQcqFKV9JF/monstruo.gif" width="50%">
+			 <br>
+         <label for="name">Para empezar a jugar ingresa tu nombre</label><br><br>
+         <input type="text" id="name"  placeholder="Ingresa tu nombre aquí" /><br><br>
+     </form>
+         <button type="submit" onclick="player()">JUGAR</button>
+   </div>
+ 	</div>
+
+  <!--screenWelcome-->
+
+	<div  id="welcome" class=start>
+		<h1>MOUNSTRIVIA</h1>
+		<h2 id="inputName"></h2><br>
+		<h3>Ahora, elige la opción que prefieras</h3>
+		<div>
+			<div class="left">
+				<button type= "submit"  id="chooseAnimals" onclick="optionAnimals()">ANIMALES</button>
+			</div>
+
+			<div class="right">
+				<button  type="submit"  id="chooseCulture"  onclick="optionCulture()">CULTURA GENERAL</button><br><br><br>
+
+			</div>
+  	</div>
+	</div>
+
+<!--pantalla options1-->
+
+	<div class="questions" id="questionsAnimals">
+		<h1>MOUNSTRIVIA</h1>
+		<h2>Curiosidades sobre animales</h2>
+		<div>
+	    <form>
+        <p>¿Qué animal vive más de 150 años?</p>
+        <input type="radio" name="question1" id="q11">
+				<label for="q11">Elefante.</label>
+
+				<input type="radio" name="question1" id="q12">
+        <label for="q12">Tortuga.</label>
+
+				<input type="radio" name="question1" id="q13">
+        <label for="q13">Ballena.</label>
+			</form>
+
+	    <form>
+        <p>¿Qué animal duerme con un ojo abierto?</p>
+        <input type="radio" name="question2" id="q21">
+				<label for="q21">Gallina.</label>
+
+			  <input type="radio" name="question2" id="q22">
+				<label for="q22">Delfín.</label>
+
+				<input type="radio" name="question2" id="q23">
+				<label for="q23">Cocodrilo.</label>
+	    </form>
+
+	    <form>
+	      <p>¿Qué insecto tiene 47 dientes?</p>
+				<input type="radio" name="question3" id="q31">
+				<label for="q31">Zancudo.</label>
+
+				<input type="radio" name="question3" id="q32">
+				<label for="q32">Araña.</label>
+
+				<input type="radio" name="question3" id="q33">
+				<label for= "q33">Mosca.</label>
+	    </form>
+			<button  type="submit" onclick="resultAnimals()">ENVIAR</button>
+		</div>
+	</div>
+
+<!--pantalla resultados options1-->
+
+	<div class="questions" id='resultAnimals'>
+		<h1>MOUNSTRIVIA</h1>
+		<p id="scoreAnimals"></p><br>
+		<h2>¡Juguemos de nuevo!</h2>
+		<div>
+
+		<div class="left">
+			<button type="submit"  id="chooseAnimals" onclick="optionAnimals()">ANIMALES</button>
+			 </div>
+			    <div class="right">
+				<button  type="submit"  id="chooseCulture"  onclick="optionCulture()">CULTURA GENERAL</button><br><br><br>
+
+			</div>
+  	</div>
+	</div>
+
+<!--pantalla options2-->
+
+	<div class="questions" id="questionsCulture">
+		<h1>MOUNSTRIVIA</h1>
+		<h2>Curiosidades sobre Cultura General</h2>
+		<div>
+			<form>
+				<p>¿Cuál es la escritura usada por personas ciegas?</p>
+				<input type="radio" name="questionA1" id="qA11">
+				<label for="qA11">Braile.</label>
+
+				<input type="radio" name="questionA1" id="qA12">
+				<label for="qA12">Jeroglifos.</label>
+
+				<input type="radio" name="questionA1" id="qA13">
+				<label for="qA13">Morse</label>
+			</form>
+
+			<form>
+				<p>Mozart era un genio en...</p>
+				<input type="radio" name="questionA2" id="qA21">
+				<label for="qA21">Pintura.</label>
+
+				<input type="radio" name="questionA2" id="qA22">
+				<label for="qA22">Música.</label>
+
+				<input type="radio" name="questionA2" id="qA23">
+				<label for="qA23">Teatro.</label>
+			</form>
+
+			<form>
+				<p>Picasso fue un gran...</p>
+				<input type="radio" name="questionA3" id="qA31">
+				<label for="qA31">Dramaturgo.</label>
+
+				<input type="radio" name="questionA3" id="qA32">
+				<label for="qA32">Escritor.</label>
+
+				<input type="radio" name="questionA3" id="qA33">
+				<label for="qA33">Pintor.</label>
+			</form>
+
+			<button type="submit" onclick="resultCulture()">ENVIAR</button>
+		</div>
+	</div>
+
+	<div class="questions" id='resultCulture'>
+		<h1>MOUNSTRIVIA</h1>
+		<p id="scoreCulture"></p>
+		<h2>¡Juguemos de nuevo!</h2>
+		<div>
+			<div class="left">
+			  <button type="submit"  id="chooseAnimals" onclick="optionAnimals()">ANIMALES</button>
+			</div>
+		    <div class="right">
+					<button  type="submit"  id="chooseCulture"  onclick="optionCulture()">CULTURA GENERAL</button>
+			</div>
+		</div>
+	</div>
+
+
+  <script src="app.js"></script>
+
+</body>
+</html>
